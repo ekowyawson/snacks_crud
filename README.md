@@ -11,8 +11,8 @@ In this iteration, we will add a full **CRUD** functionality to our bag of trick
 ### Links and Resources
 
 - [What is Django](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Introduction)
-- [First Django App - Part 1](https://docs.djangoproject.com/en/4.1/intro/tutorial01/)
-- [First Django App - Part 2](https://docs.djangoproject.com/en/4.1/intro/tutorial02/)
+- [First Django App - Part 1](https://docs.djangoproject.com/en/5.0/intro/tutorial01/)
+- [First Django App - Part 2](https://docs.djangoproject.com/en/5.0/intro/tutorial02/)
 - [Django Forms](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Forms)
 - [Django Templates](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Home_page)
 - [Django Views](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Generic_views)
@@ -22,14 +22,14 @@ In this iteration, we will add a full **CRUD** functionality to our bag of trick
 ### Feature Tasks and Requirements
 
 - [x] Create snacks app
-- [ ] Create Snack model
+- [x] Create Snack model
   - `title` field
   - `purchaser` field
   - `description` field
   - Register model with `admin`
-- [ ] Create SnackListView that extends appropriate generic view
+- [x] Create SnackListView that extends appropriate generic view
   - Associated url path is an empty string
-- [ ] Create SnackDetailView that extends appropriate generic view
+- [x] Create SnackDetailView that extends appropriate generic view
   - Associated url path is <int:pk>/
 - [ ] Create SnackCreateView that extends appropriate generic view
   - Associated url path is create/

@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>List of Snacks...</h1>
+
+<section>
+    {% for snack in snacks %}
+    <ul>
+        <li>
+            <h3>
+                Name:
+            </h3>
+            <a href="{% url 'snack_detail' snack.pk %}">
+                {{snack.title}}
+            </a>
+        </li>
+        <li>
+            <p>{{snack.purchaser}}</p>
+        </li>
+        <li>
+            <p>{{snack.description}}</p>
+        </li>
+    </ul>
+    {% endfor%}
+</section>
+{% endblock content %}
