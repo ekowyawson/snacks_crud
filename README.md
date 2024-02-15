@@ -31,16 +31,16 @@ In this iteration, we will add a full **CRUD** functionality to our bag of trick
   - Associated url path is an empty string
 - [x] Create SnackDetailView that extends appropriate generic view
   - Associated url path is <int:pk>/
-- [ ] Create SnackCreateView that extends appropriate generic view
+- [x] Create SnackCreateView that extends appropriate generic view
   - Associated url path is create/
-- [ ] Create SnackUpdateView that extends appropriate generic view
+- [x] Create SnackUpdateView that extends appropriate generic view
   - Associated url path is <int:pk>/update/
-- [ ] Create SnackDeleteView that extends appropriate generic view
+- [x] Create SnackDeleteView that extends appropriate generic view
   - Associated url path is <int:pk>/delete/
-- [ ] Add urls to support all views, with appropriate names
-- [ ] Add templates to support all views
-- [ ] Add navigation links in appropriate locations to access all pages
-- [ ] Make all necessary changes to project level files for project to run
+- [x] Add urls to support all views, with appropriate names
+- [x] Add templates to support all views
+- [x] Add navigation links in appropriate locations to access all pages
+- [x] Make all necessary changes to project level files for project to run
 
 ### Stretch Goals
 
@@ -65,8 +65,8 @@ To run this app, you must:
 
 ### Tests
 
-- [ ] Test all Views
-- [ ] Test Model
+- [x] Test all Views
+- [x] Test Model
   - String representation
   - All fields
 

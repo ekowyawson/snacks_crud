@@ -1,5 +1,6 @@
-{% load compress %}
 {% load static %}
+{% load compress %}
+{% load i18n %} <!-- Add if you plan to use internationalization -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -7,7 +8,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Snacks</title>
+    <title>{% block title %}Snacks{% endblock title %}</title>
     {% compress css %}
     <link rel="stylesheet" href="{% static 'src/output.css' %}">
     {% endcompress %}
@@ -16,14 +17,17 @@
 <body>
     <header class="bg-green-300 px-2 py-8">
         <nav class="flex space-x-4 items-center">
-            <a class="text-4xl" href="{% url 'snack_list' %}">Snacks Purchaser</a>
-            <a href="somesite.com">Some site</a>
-            <a href="othersite.com">Other site</a>
+            <a class="text-4xl" href="{% url 'snack_list' %}">{% trans "World of Snacks" %}</a>
+            <a href="{% url 'snack_create' %}">{% trans "Create" %}</a>
+            <!-- Removed the update link since it requires a specific snack ID -->
+            <!-- Optionally, add more navigation links here -->
         </nav>
     </header>
     <main>
-        {% block content %}
-        {% endblock content %}
+        <div class="container mx-auto mt-4">
+            {% block content %}
+            {% endblock content %}
+        </div>
     </main>
 </body>
 

@@ -1,0 +1,56 @@
+.
+├── db.sqlite3
+├── manage.py
+├── package.json
+├── package-lock.json
+├── README.md
+├── requirements.txt
+├── snacks
+│   ├── admin.py
+│   ├── apps.py
+│   ├── __init__.py
+│   ├── migrations
+│   │   ├── 0001_initial.py
+│   │   ├── __init__.py
+│   │   └── __pycache__
+│   │       ├── 0001_initial.cpython-310.pyc
+│   │       └── __init__.cpython-310.pyc
+│   ├── models.py
+│   ├── __pycache__
+│   │   ├── admin.cpython-310.pyc
+│   │   ├── apps.cpython-310.pyc
+│   │   ├── __init__.cpython-310.pyc
+│   │   ├── models.cpython-310.pyc
+│   │   ├── urls.cpython-310.pyc
+│   │   └── views.cpython-310.pyc
+│   ├── tests.py
+│   ├── urls.py
+│   └── views.py
+├── snacks_crud_project
+│   ├── asgi.py
+│   ├── __init__.py
+│   ├── __pycache__
+│   │   ├── __init__.cpython-310.pyc
+│   │   ├── settings.cpython-310.pyc
+│   │   ├── urls.cpython-310.pyc
+│   │   └── wsgi.cpython-310.pyc
+│   ├── settings.py
+│   ├── urls.py
+│   └── wsgi.py
+├── static
+│   ├── CACHE
+│   │   └── css
+│   │       ├── output.16d6f43a001c.css
+│   │       ├── output.4da3278c70fc.css
+│   │       ├── output.5d4603aa611a.css
+│   │       ├── output.789bfe6c00e3.css
+│   │       ├── output.ba01c146b9bd.css
+│   │       └── output.f12d49cfc00e.css
+│   └── src
+│       ├── input.css
+│       └── output.css
+├── tailwind.config.js
+└── templates
+    ├── base.html
+    ├── snack_detail.html
+    └── snack_list.html

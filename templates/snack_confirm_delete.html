@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="max-w-xl mx-auto mt-8">
+    <h2 class="text-xl font-semibold mb-4">Confirm Delete</h2>
+    <p>Are you sure you want to delete the snack "{{ object.title }}"?</p>
+    <p>This action cannot be undone.</p>
+
+    <form action="{% url 'snack_delete' object.id %}" method="post">
+        {% csrf_token %}
+        <div class="mt-4">
+            <button type="submit" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
+                Yes, delete it
+            </button>
+            <a href="{% url 'snack_detail' object.id %}"
+                class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded">
+                Cancel
+            </a>
+        </div>
+    </form>
+</div>
+{% endblock content %}
